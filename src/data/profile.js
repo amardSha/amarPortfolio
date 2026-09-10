@@ -1,0 +1,20 @@
+const profile = {
+  name: "Amardeep Sharma",
+  role: "React.js Sr. Frontend Developer",
+  secondaryRole: "Frontend Developer | React.js | JavaScript | TypeScript | Redux | Next.js",
+  location: "Mohali, Punjab, India",
+  email: "amardeep.contact@gmail.com",
+  phone: "+918437905128",
+  github: "https://github.com/amardeepsharma",
+  linkedin: "https://www.linkedin.com/in/amardeepui/",
+  resume: "/Amardeep_Sharma_Sr_React_Frontend_Developer.pdf",
+  profilePhoto: "images/profilePhoto.png",
+  githubUsername: "amardeepsharma",
+  availability: "Available for selected projects",
+  introduction:
+    "I build fast, scalable, and user-focused web applications with React.js, Next.js, and modern web technologies. I focus on clean, maintainable code, seamless user experiences, and solutions that create real impact.",
+  about:
+    "I’m a frontend developer specializing in React.js, focused on turning product requirements and interface designs into fast, reliable, and scalable web experiences. I build with reusable architecture, responsive design, clean API integration, and performance in mind while paying attention to the details that make software feel polished and complete."
+};
+
+export default profile;

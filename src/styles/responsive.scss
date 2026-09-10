@@ -1,0 +1,73 @@
+@media (max-width: 1100px) {
+  .hero-grid { gap: 45px; }
+  .hero h1 { font-size: clamp(3.3rem, 7vw, 5.2rem); }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 900px) {
+  .nav-links { display: none; position: absolute; left: 20px; right: 20px; top: 74px; padding: 13px; flex-direction: column; align-items: stretch; background: var(--surface); border: 1px solid var(--border-strong); border-radius: 16px; box-shadow: var(--shadow); }
+  .nav-links--open { display: flex; }
+  .nav-links button, .nav-links a { text-align: left; padding: 12px; }
+  .nav-links .nav-talk { margin-left: 0; }
+  .nav-menu-btn { display: grid; }
+  .hero-grid, .about-grid, .detail-hero, .faq-grid, .contact-panel { grid-template-columns: 1fr; }
+  .hero { min-height: auto; }
+  .hero-visual { min-height: 450px; }
+  .about-grid { gap: 45px; }
+  .about-visual { min-height: auto; }
+  .portrait-placeholder { max-width: 330px; }
+  .process-line { grid-template-columns: 1fr; gap: 25px; }
+  .process-line::before { top: 28px; bottom: 28px; left: 27px; right: auto; width: 1px; height: auto; }
+  .process-step { display: grid; grid-template-columns: 55px 1fr; column-gap: 15px; padding: 0; }
+  .process-step .process-number { grid-row: span 2; }
+  .process-step > svg { margin: 3px 0 3px; }
+  .process-step h3 { grid-column: 2; }
+  .process-step p { grid-column: 2; max-width: 600px; }
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+  .github-grid { grid-template-columns: 1fr 1fr; }
+  .contact-copy, .contact-form { padding: 45px; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .detail-grid { gap: 35px; }
+}
+
+@media (max-width: 640px) {
+  .container { width: min(calc(100% - 28px), var(--container)); }
+  .section-pad { padding: 82px 0; }
+  .nav-inner { height: 70px; }
+  .hero { padding-top: 120px; }
+  .hero h1 { font-size: clamp(3rem, 16vw, 4.5rem); }
+  .hero-meta { flex-wrap: wrap; }
+  .hero-visual { min-height: 390px; }
+  .code-card { transform: none; }
+  .orbit-chip { transform: scale(.85); }
+  .orbit-chip--1 { left: -7%; }.orbit-chip--3 { right: -8%; }.orbit-chip--6 { left: -8%; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .stat-item { min-height: 100px; border-bottom: 1px solid var(--border); }
+  .stat-item:nth-child(2) { border-right: 0; }
+  .stat-item:nth-child(3), .stat-item:nth-child(4) { border-bottom: 0; }
+  .section-heading { margin-bottom: 38px; }
+  .section-heading h2 { font-size: 2.5rem; }
+  .check-grid, .skills-grid, .projects-grid, .testimonial-grid, .github-grid, .services-grid, .why-grid, .detail-grid { grid-template-columns: 1fr; }
+  .service-card { min-height: 210px; }
+  .experience-item { grid-template-columns: 1fr; gap: 8px; }
+  .experience-head { flex-direction: column; gap: 12px; }
+  .experience-date { text-align: left; }
+  .experience-columns { grid-template-columns: 1fr; gap: 20px; }
+  .filter-row { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; }
+  .filter-btn { white-space: nowrap; }
+  .project-content { padding: 19px; }
+  .project-content h3 { font-size: 1.45rem; }
+  .github-empty { flex-direction: column; align-items: flex-start; }
+  .github-empty .btn-primary { margin-left: 0; }
+  .faq-item > button > span { gap: 10px; font-size: .8rem; }
+  .faq-item p { padding-left: 0; }
+  .form-row { grid-template-columns: 1fr; }
+  .contact-copy, .contact-form { padding: 30px 22px; }
+  .footer-top { grid-template-columns: 1fr; gap: 35px; }
+  .footer-bottom { flex-direction: column; gap: 7px; }
+  .detail-hero { gap: 35px; margin-bottom: 55px; }
+  .detail-hero h1 { font-size: 3.2rem; }
+  .detail-grid { gap: 30px; }
+  .project-nav strong { font-size: .95rem; }
+}
