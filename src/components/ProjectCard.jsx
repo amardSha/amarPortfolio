@@ -2,15 +2,24 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-// Fallback image if project.image is undefined
-
 export default function ProjectCard({ project }) {
+  const image = project.image || project.imageInner;
+
   return (
     <>
       <motion.article layout className="project-card">
         <Link to={`/projects/${project.id}`} className="project-image" aria-label={`View ${project.title} details`}>
           <div className="project-image-grid" />
-          <img src={project.image} alt={project.title} loading="lazy" />
+          {image ? (
+            <img
+              src={image}
+              alt={project.title}
+              loading="lazy"
+              onError={(event) => {
+                event.currentTarget.style.display = "none";
+              }}
+            />
+          ) : null}
           <span className="project-image-label">{project.imageLabel}</span>
           <span className="project-number">{project.number}</span>
           <span className="project-open"><ArrowUpRight size={19} /></span>

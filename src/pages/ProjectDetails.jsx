@@ -18,6 +18,18 @@ import projects from "../data/projects";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
+function handleImageError(event, fallback) {
+  const image = event.currentTarget;
+
+  if (fallback && image.dataset.fallback !== "used") {
+    image.dataset.fallback = "used";
+    image.src = fallback;
+    return;
+  }
+
+  image.style.display = "none";
+}
+
 export default function ProjectDetails() {
   const { projectId } = useParams();
 
@@ -145,10 +157,11 @@ export default function ProjectDetails() {
               }}
             >
               <img
-                src={project.imageInner}
+                src={project.imageInner || project.image}
                 alt={project.title}
                 loading="eager"
-                className={`${project.id === 2 ? '' : 'border border-cyan-400/25  '} h-auto overflow-hidden rounded-3xl transition-transform duration-500 hover:scale-[1.12]`}
+                onError={(event) => handleImageError(event, project.image)}
+                className={`${project.border === "yes" ? 'border border-cyan-400/25' : ''} h-auto overflow-hidden rounded-3xl transition-transform duration-500 hover:scale-[1.12]`}
               />
             </motion.div>
 
@@ -638,9 +651,10 @@ export default function ProjectDetails() {
             {detailSections.chartImage ? (
               <section className="rounded-3xl border border-cyan-400/25">
                 <img
-                  src={detailSections.chartImage}
+                  src={detailSections.chartImage || project.image}
                   alt={detailSections.chartAlt}
                   loading="eager"
+                  onError={(event) => handleImageError(event, project.image)}
                   className="block h-auto overflow-hidden rounded-3xl transition-transform duration-500 hover:scale-[1.12]"
                 />
               </section>
@@ -709,8 +723,9 @@ export default function ProjectDetails() {
                   >
 
                     <img
-                      src={showcase.image}
+                      src={showcase.image || project.image}
                       alt={showcase.alt}
+                      onError={(event) => handleImageError(event, project.image)}
                       className="relative z-10 block h-auto w-full object-cover"
                     />
                   </div>
