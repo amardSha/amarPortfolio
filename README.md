@@ -1,4 +1,5 @@
 **Build. Innovate. Transform with Technology.**
+
 Senior React Developer | AI & Web Developer
 15+ Years in Software Development • 6+ Years in React
 I’m a Senior Frontend Developer specializing in React.js, JavaScript, TypeScript, Next.js, Redux Toolkit, REST APIs, and modern UI technologies.
