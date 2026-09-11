@@ -1,11 +1,10 @@
-
 import { useEffect, useState } from "react";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
 import { setTheme } from "../store/themeSlice";
 import profile from "../data/profile";
-
+import { SiReact } from "react-icons/si";
 const links = [
   ["Home", "home"], ["About", "about"], ["Skills", "skills"], ["Experience", "experience"],
   ["Projects", "projects"], ["Services", "services"], ["Contact", "contact"]
@@ -80,7 +79,7 @@ export default function Navbar() {
     <header className={`site-nav ${compact ? "site-nav--compact" : ""}`}>
       <div className="container nav-inner">
         <button className="brand" onClick={() => go("home")} aria-label="Go to home">
-          <span className="brand-mark">&lt;/&gt;</span>
+          <span className="brand-mark"><SiReact size={24} /></span>
           <span>{profile.name}</span>
         </button>
 
