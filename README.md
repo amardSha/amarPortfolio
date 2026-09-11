@@ -1,3 +1,4 @@
+Hi there, I'm Amar!
 **Build. Innovate. Transform with Technology.**
 
 Senior React Developer | AI & Web Developer
