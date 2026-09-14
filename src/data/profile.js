@@ -6,11 +6,11 @@ const profile = {
   location: "Mohali, Punjab, India",
   email: "amardeep.contact@gmail.com",
   phone: "+918437905128",
-  github: "https://github.com/amardSha",
+  github: "https://github.com/amardeepsharmaa",
   linkedin: "https://www.linkedin.com/in/amardeepui/",
   resume: `${import.meta.env.BASE_URL}Amardeep_Sharma_Sr_React_Frontend_Developer.pdf`,
   profilePhoto: "images/profilePhoto.png",
-  githubUsername: "amardSha",
+  githubUsername: "amardeepsharmaa",
   availability: "Available for selected projects",
   introduction:
     "I build fast, scalable, and user-focused web applications with React.js, Next.js, and modern web technologies. I focus on clean, maintainable code, seamless user experiences, and solutions that create real impact.",
