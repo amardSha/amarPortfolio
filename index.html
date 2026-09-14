@@ -13,6 +13,13 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      const redirect = window.location.search;
+      if (redirect.startsWith("?/")) {
+        const route = redirect.slice(2).split("&")[0].replace(/~and~/g, "&");
+        window.history.replaceState(null, "", `${window.location.pathname}${route}`);
+      }
+    </script>
     <script type="module" src="./src/main.jsx"></script>
      <!-- <script type="module" src="/src/main.jsx"></script> -->
   </body>

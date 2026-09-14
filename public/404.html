@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      const pathSegmentsToKeep = 1;
+      const location = window.location;
+      const route = location.pathname.split("/").slice(1 + pathSegmentsToKeep).join("/");
+      const base = location.pathname.split("/").slice(0, 1 + pathSegmentsToKeep).join("/");
+      const query = location.search ? `&${location.search.slice(1).replace(/&/g, "~and~")}` : "";
+
+      location.replace(`${location.protocol}//${location.host}${base}/?/${route}${query}${location.hash}`);
+    </script>
+  </head>
+  <body></body>
+</html>
