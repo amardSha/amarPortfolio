@@ -14,7 +14,7 @@ import profile from "../data/profile";
 export default function Contact() {
   return (
     <section id="contact" className="py-8 md:py-12">
-      <div className="container mx-auto px-5 md:px-8">
+      <div className="container mx-auto">
 
         <div className="grid min-h-[680px] overflow-hidden rounded-[26px] border border-slate-700/60 bg-[#10141c] lg:grid-cols-[43%_57%]">
 
@@ -22,7 +22,7 @@ export default function Contact() {
           <div className="bg-gradient-to-br from-[#18232e] via-[#121923] to-[#10151d] px-7 py-12 md:px-12 md:py-16 lg:px-16 lg:py-[70px]">
 
             <SectionHeading
-              eyebrow="11 / Contact"
+              eyebrow="09 / Contact"
               title="Have a React project in mind?"
               text="Let's build something fast, scalable and user-friendly."
             />

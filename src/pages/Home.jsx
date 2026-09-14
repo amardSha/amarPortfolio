@@ -44,7 +44,7 @@ export default function Home() {
         <Experience />
         <Projects />
         <WhyMe />
-        <Github />
+        {/* <Github /> */}
         {/* <Testimonials /> */}
         <FAQ />
         <Contact />
