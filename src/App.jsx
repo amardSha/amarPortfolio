@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import ProjectDetails from "./pages/ProjectDetails";
+import BackToTop from "./components/BackToTop";
 import { useAppDispatch, useAppSelector } from "./store/hooks";
 import { setTheme } from "./store/themeSlice";
 
@@ -24,11 +25,14 @@ function App() {
   }, [dispatch]);
 
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/projects/:projectId" element={<ProjectDetails />} />
-      <Route path="*" element={<Home />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/:projectId" element={<ProjectDetails />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+      <BackToTop />
+    </>
   );
 }
 

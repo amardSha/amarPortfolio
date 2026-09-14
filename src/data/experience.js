@@ -2,7 +2,7 @@ export default [
   {
     company: "Ambiente Technologies",
     position: "Senior React Frontend Developer",
-    duration: "Nov 2022 — Present",
+    duration: "Nov 2022 — April 2026",
     location: "Mohali / Remote",
     stack: [
       "React.js",

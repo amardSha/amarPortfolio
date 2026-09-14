@@ -12,7 +12,7 @@ import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import WhyMe from "../components/WhyMe";
 import Github from "../components/Github";
-import Testimonials from "../components/Testimonials";
+// import Testimonials from "../components/Testimonials";
 import FAQ from "../components/FAQ";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -45,7 +45,7 @@ export default function Home() {
         <Projects />
         <WhyMe />
         <Github />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <FAQ />
         <Contact />
       </main>

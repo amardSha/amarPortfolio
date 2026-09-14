@@ -179,7 +179,7 @@ export default function ProjectDetails() {
             {/* =================================================
       01 — OVERVIEW
   ================================================= */}
-            <section className="relative overflow-hidden rounded-3xl border border-cyan-400/25 bg-[#071016] p-7 md:p-10 lg:p-12">
+            <section className="relative overflow-hidden rounded-3xl border border-cyan-400/25 bg-[#071016] p-5 md:p-8 lg:p-8">
 
               {/* subtle glow */}
               <div className="pointer-events-none absolute right-0 top-0 h-72 w-72 rounded-full bg-cyan-400/5 blur-3xl" />

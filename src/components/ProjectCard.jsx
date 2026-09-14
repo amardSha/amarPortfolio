@@ -26,7 +26,7 @@ export default function ProjectCard({ project }) {
         </Link>
         <div className="project-content">
           <div className="project-meta"><span>{project.category}</span><span>{project.role}</span></div>
-          <h3>{project.title}</h3>
+          <h3><Link to={`/projects/${project.id}`}>{project.title}</Link></h3>
           <p>{project.description}</p>
           <div className="tag-list">{project.technologies.map((tech) => <span key={tech}>{tech}</span>)}</div>
           <div className="project-actions">

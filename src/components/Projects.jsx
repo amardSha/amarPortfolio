@@ -22,11 +22,11 @@ export default function Projects() {
     <section id="projects" className="section-pad section-tint">
       <div className="container">
         <SectionHeading eyebrow="06 / Selected Work" title="Projects built around real workflows." text="Case-study style project cards make the role, stack and product problem visible at a glance." />
-        <div className="filter-row" role="group" aria-label="Project categories">
+        {/* <div className="filter-row" role="group" aria-label="Project categories">
           {categories.map((category) => (
             <button className={active === category ? "filter-btn active" : "filter-btn"} key={category} onClick={() => setActive(category)}>{category}</button>
           ))}
-        </div>
+        </div> */}
         <motion.div layout className="projects-grid">
           <AnimatePresence mode="popLayout">
             {filtered.map((project) => <ProjectCard key={project.id} project={project} />)}

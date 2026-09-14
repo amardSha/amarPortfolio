@@ -1,6 +1,7 @@
 const profile = {
-  name: "Amardeep Sharma",
-  role: "React.js Sr. Frontend Developer",
+  name: "AS",
+  role: "Senior React Engineer",
+  tagline:"Building fast, scalable React experiences.",
   secondaryRole: "Frontend Developer | React.js | JavaScript | TypeScript | Redux | Next.js",
   location: "Mohali, Punjab, India",
   email: "amardeep.contact@gmail.com",
